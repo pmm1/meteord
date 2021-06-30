@@ -1,12 +1,12 @@
 FROM debian:stretch
-MAINTAINER Jesse Rosenberger
+LABEL maintainer="Jesse Rosenberger"
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
 
 ARG NODE_VERSION
-ENV NODE_VERSION ${NODE_VERSION:-12.20.0}
-ONBUILD ENV NODE_VERSION ${NODE_VERSION:-12.20.0}
+ENV NODE_VERSION ${NODE_VERSION:-14.17.1}
+ONBUILD ENV NODE_VERSION ${NODE_VERSION:-14.17.1}
 
 RUN bash $METEORD_DIR/lib/install_base.sh
 RUN bash $METEORD_DIR/lib/install_node.sh
