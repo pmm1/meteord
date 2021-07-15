@@ -6,14 +6,14 @@
 
 Please see the explanation of the [tag variations](#tag-variations) (e.g. `-binbuild`, `-onbuild`) below.
 
-### Node 14 (Meteor 2.3+)
+### Node 14 (Meteor 2.3.1+)
 
-#### Node 14.17.1
+#### Node 14.17.3
 
-- `node-14-base`, `node-14.17.1-base`
-- `node-14-binbuild`, `node-14.17.1-binbuild`
-- `node-14-onbuild`, `node-14.17.1-onbuild`
-- `node-14-devbuild`, `node-14.17.1-devbuild`
+- `node-14-base`, `node-14.17.3-base`
+- `node-14-binbuild`, `node-14.17.3-binbuild`
+- `node-14-onbuild`, `node-14.17.3-onbuild`
+- `node-14-devbuild`, `node-14.17.3-devbuild`
 
 ### Node 12 (Meteor 1.9+)
 
