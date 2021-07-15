@@ -14,6 +14,7 @@ clean
 docker run -d \
     --name no_app \
     -e ROOT_URL=http://no_app \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -p 9090:80 \
     "abernix/meteord:node-${NODE_VERSION}-base"
 

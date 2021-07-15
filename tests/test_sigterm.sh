@@ -20,6 +20,7 @@ meteor build --architecture=os.linux.x86_64 ./
 docker run -d \
     --name meteor-app \
     -e ROOT_URL=http://yourapp_dot_com \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -v /tmp/hello/:/bundle \
     -p 8080:80 \
     abernix/meteord:base

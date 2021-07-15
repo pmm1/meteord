@@ -21,6 +21,7 @@ docker build -t meteor-app-image ./
 docker run -d \
     --name meteor-app \
     -e ROOT_URL=http://yourapp_dot_com \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -p 8080:80 \
     meteor-app-image
 

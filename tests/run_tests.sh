@@ -6,6 +6,10 @@ export NODE_VERSION=${NODE_VERSION:-14.17.3}
 
 bash ./build_it.sh
 
+docker kill some-test-mongo || true
+docker rm some-test-mongo || true
+docker run --name some-test-mongo -d mongo:latest
+
 bash ./test_meteor_app.sh
 bash ./test_meteor_app_with_devbuild.sh
 

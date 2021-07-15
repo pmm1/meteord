@@ -14,6 +14,7 @@ clean
 docker run -d \
     --name binary_build \
     -e ROOT_URL=http://binary_build_app \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -e BUNDLE_URL=https://abernix-meteord-tests.s3-us-west-2.amazonaws.com/meteord-test-bundle.tar.gz \
     -e REBUILD_NPM_MODULES=1 \
     -p 9090:80 \

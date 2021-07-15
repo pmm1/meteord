@@ -14,6 +14,7 @@ clean
 docker run -d \
     --name web \
     -e ROOT_URL=http://web_app \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -e BUNDLE_URL=https://abernix-meteord-tests.s3-us-west-2.amazonaws.com/meteord-test-bundle.tar.gz \
     -p 9090:80 \
     "abernix/meteord:node-${NODE_VERSION}-base"

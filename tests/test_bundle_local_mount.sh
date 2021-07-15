@@ -21,6 +21,7 @@ ls -la
 docker run -d \
     --name localmount \
     -e ROOT_URL=http://localmount_app \
+    -e MONGO_URL=mongodb://some-test-mongo \
     -v /tmp/localmount:/bundle \
     -p 9090:80 \
     "abernix/meteord:node-${NODE_VERSION}-base"
