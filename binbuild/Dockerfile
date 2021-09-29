@@ -1,5 +1,4 @@
 FROM abernix/meteord:base
-MAINTAINER Jesse Rosenberger
 
 ARG NODE_VERSION
 ENV NODE_VERSION ${NODE_VERSION:-12.20.0}

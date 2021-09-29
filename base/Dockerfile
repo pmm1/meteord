@@ -1,5 +1,4 @@
-FROM debian:stretch
-MAINTAINER Jesse Rosenberger
+FROM ubuntu:18.04
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
