@@ -1,10 +1,9 @@
 version: 2
 jobs:
-
   build:
     machine: true
     environment:
-      NODE_VERSION: 12.20.0
+      NODE_VERSION: 14.17.4
     steps:
       - checkout
       - run:

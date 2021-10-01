@@ -1,7 +1,7 @@
 FROM abernix/meteord:base
 
 ARG NODE_VERSION
-ENV NODE_VERSION ${NODE_VERSION:-12.20.0}
+ENV NODE_VERSION ${NODE_VERSION:-14.17.4}
 
 COPY scripts/install_binbuild_tools.sh $METEORD_DIR/install_binbuild_tools.sh
 COPY scripts/rebuild_npm_modules.sh $METEORD_DIR/rebuild_npm_modules.sh
